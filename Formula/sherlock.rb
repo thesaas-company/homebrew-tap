@@ -10,7 +10,7 @@ class Sherlock < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Darwin_arm64.tar.gz"
-      sha256 "78eb2ee5ccdb916d110fd9c9b0c6948568d79daa9cf495aa52bf22450d61660b"
+      sha256 "49d42472a9fcd57ea18b900a9757940d9551c6d5cb3725ac39613c318ed9558e"
 
       def install
         bin.install "sherlock"
@@ -18,7 +18,7 @@ class Sherlock < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Darwin_x86_64.tar.gz"
-      sha256 "94541afb772d3f0e0d40b3ce64f61cb13eaacddef1b1e66cb1e9b18e83d70f10"
+      sha256 "069b18b87e231c4fb43937153e3625841b15fa9387b844046e08a31c15fe8d31"
 
       def install
         bin.install "sherlock"
@@ -29,7 +29,7 @@ class Sherlock < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Linux_arm64.tar.gz"
-      sha256 "eedca56e5f273443dcc36d344c44c93eaadd345dcc0ded044d252f71949f15a0"
+      sha256 "ac662f34bb39c452de99228127bdd97238e300763c79477e0cb0b855fbb0a60d"
 
       def install
         bin.install "sherlock"
@@ -37,7 +37,7 @@ class Sherlock < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Linux_x86_64.tar.gz"
-      sha256 "ba4195199287b2ab4ccaf0efdfcffb60004b33abfa36511c0e7d851fc00b9198"
+      sha256 "0a9f2be357474a4b3848d637b6eedaa2840f25216c7ace646a1b9897c33378ad"
 
       def install
         bin.install "sherlock"
