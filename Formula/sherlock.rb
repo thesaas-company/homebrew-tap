@@ -5,20 +5,20 @@
 class Sherlock < Formula
   desc "sherlock is a command line tool to interact with a datasherlocks cloud."
   homepage "https://datasherlocks.io/docs"
-  version "0.0.4"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.4/datasherlocks_Darwin_arm64.tar.gz"
-      sha256 "6c17eed6e43b9b6cb1546e83d1a4206ff61efebd40d77c82f431fde13a5ea8ce"
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Darwin_arm64.tar.gz"
+      sha256 "78eb2ee5ccdb916d110fd9c9b0c6948568d79daa9cf495aa52bf22450d61660b"
 
       def install
         bin.install "sherlock"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.4/datasherlocks_Darwin_x86_64.tar.gz"
-      sha256 "f144da936eb67a0b21f614ddbc7829e327bc0fc3b5b2aa6d1d16d776735de466"
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Darwin_x86_64.tar.gz"
+      sha256 "94541afb772d3f0e0d40b3ce64f61cb13eaacddef1b1e66cb1e9b18e83d70f10"
 
       def install
         bin.install "sherlock"
@@ -28,16 +28,16 @@ class Sherlock < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.4/datasherlocks_Linux_arm64.tar.gz"
-      sha256 "c4062aedf4f8e7611ecc6ae7df8f211f5eacd071d6f8cfa004735e5cc6e1d2eb"
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Linux_arm64.tar.gz"
+      sha256 "eedca56e5f273443dcc36d344c44c93eaadd345dcc0ded044d252f71949f15a0"
 
       def install
         bin.install "sherlock"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.4/datasherlocks_Linux_x86_64.tar.gz"
-      sha256 "ccddb381015512090904fcbf8fb4bee88353b33ab846cd074e1ace443a31797d"
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.2/datasherlocks_Linux_x86_64.tar.gz"
+      sha256 "ba4195199287b2ab4ccaf0efdfcffb60004b33abfa36511c0e7d851fc00b9198"
 
       def install
         bin.install "sherlock"
