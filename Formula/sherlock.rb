@@ -5,20 +5,20 @@
 class Sherlock < Formula
   desc "sherlock is a command line tool to interact with a datasherlocks cloud."
   homepage "https://datasherlocks.io/docs"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.5/datasherlocks_Darwin_x86_64.tar.gz"
-      sha256 "bffe8b30e864a8541bd529f4d140dc6c1d4bd67ac75fec8cfef92194d6cb9b4f"
+    if Hardware::CPU.arm?
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.6/datasherlocks_Darwin_arm64.tar.gz"
+      sha256 "8e6b01b9680ddcee9299c2c355a9a123460084d102c9e7bca4bd6966f9d5e59b"
 
       def install
         bin.install "sherlock"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.5/datasherlocks_Darwin_arm64.tar.gz"
-      sha256 "8508287e9ada550ca1c00c1af69efff0009eeb18358cfb91950254a7564218d0"
+    if Hardware::CPU.intel?
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.6/datasherlocks_Darwin_x86_64.tar.gz"
+      sha256 "c641590ca0c635481649723cb2f57a2b61e173688f5563069712b4536fac292f"
 
       def install
         bin.install "sherlock"
@@ -27,17 +27,17 @@ class Sherlock < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.5/datasherlocks_Linux_arm64.tar.gz"
-      sha256 "5b0bc4a7996ac4f8b87ba0b0ad2c0c79d7f0ef4848c7678c86e9c92ae64b2ff7"
+    if Hardware::CPU.intel?
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.6/datasherlocks_Linux_x86_64.tar.gz"
+      sha256 "3fd0d4f80bb76cb2b3dd7d3d4301a03b733bbff38946a064d7da47ec390408c0"
 
       def install
         bin.install "sherlock"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.5/datasherlocks_Linux_x86_64.tar.gz"
-      sha256 "f4b611357f75a4f205015349a15d3e6a591420f30de96254dc0830c0d5c7a7c9"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/datasherlocks/datasherlocks/releases/download/v0.0.6/datasherlocks_Linux_arm64.tar.gz"
+      sha256 "b766c154a8ad12a1899a0de6736521e3b6c7b9ba7a56a66e8017c536d1cb5d63"
 
       def install
         bin.install "sherlock"
