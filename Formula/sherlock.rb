@@ -5,20 +5,20 @@
 class Sherlock < Formula
   desc "sherlock is a command line tool to interact with a datasherlocks cloud."
   homepage "https://datasherlocks.io/docs"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.9/sherlock_Darwin_x86_64.tar.gz"
-      sha256 "4cab4c927988ffd2b5195e715ab1076f6d6fb5b672d191eb2fb6edac35afc338"
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.10/sherlock_Darwin_x86_64.tar.gz"
+      sha256 "19ef3a3aa6516c9595f5d2a8773939fb713524c9662ec993347b04b83ac1fa87"
 
       def install
         bin.install "sherlock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.9/sherlock_Darwin_arm64.tar.gz"
-      sha256 "2955a2edf390498313bf8073ba7686f586faae28a59cf8e470c425487ab5c843"
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.10/sherlock_Darwin_arm64.tar.gz"
+      sha256 "9c6543690bfabf79e091054e8843523aadaddad122e76c8dd804980c0f482099"
 
       def install
         bin.install "sherlock"
@@ -28,16 +28,16 @@ class Sherlock < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.9/sherlock_Linux_arm64.tar.gz"
-      sha256 "bdb9efdd2168716f2f60a33861b79afe4fab022ec3598c5bc2b541e8a1bc60e4"
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.10/sherlock_Linux_arm64.tar.gz"
+      sha256 "6adb7d02d097c15bffd6a33c4905b632df1cedf6ef0073a73c7666d74efe6f2a"
 
       def install
         bin.install "sherlock"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.9/sherlock_Linux_x86_64.tar.gz"
-      sha256 "b401337edc22b6ac4c47c99ad0e6ca35255ce7694b30bf95e2d1ac6b5c595731"
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.10/sherlock_Linux_x86_64.tar.gz"
+      sha256 "75fb9ba96bab0d66c7dfd70dcc72f0d6cfb0f6c262222b5201fa6abf8304ffdf"
 
       def install
         bin.install "sherlock"
