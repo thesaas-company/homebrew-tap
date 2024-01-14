@@ -5,20 +5,20 @@
 class Sherlock < Formula
   desc "sherlock is a command line tool to interact with a datasherlocks cloud."
   homepage "https://datasherlocks.io/docs"
-  version "0.0.19"
+  version "0.0.17"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.19/sherlock_Darwin_x86_64.tar.gz"
-      sha256 "779be5a1e47ee25365aa2684591f1aa7eb7a13b64208cd6b9fe88c3cff70f597"
+    if Hardware::CPU.arm?
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.17/sherlock_Darwin_arm64.tar.gz"
+      sha256 "81c992dfe001e38f68c5dd233fcb32b371f235d4462dc6906237445b32c5509a"
 
       def install
         bin.install "sherlock"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.19/sherlock_Darwin_arm64.tar.gz"
-      sha256 "ba61acc09c77c7890c033e7301a7dbc2c7e8f715f8de46f8a5f23983fc934e20"
+    if Hardware::CPU.intel?
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.17/sherlock_Darwin_x86_64.tar.gz"
+      sha256 "3028509a9e2d1b3949dc42806dee9d63c0c56132d70e16bd06f289b8de8a6eac"
 
       def install
         bin.install "sherlock"
@@ -27,17 +27,17 @@ class Sherlock < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.19/sherlock_Linux_x86_64.tar.gz"
-      sha256 "e291942b8150aefb914254985a974f17ed906e68e1ce1c37263df32e1d439e8d"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.17/sherlock_Linux_arm64.tar.gz"
+      sha256 "11f0ea500aa17cbe501a03177ffe76a3113dd2964e5015fe0bc5cbfe16e66572"
 
       def install
         bin.install "sherlock"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.19/sherlock_Linux_arm64.tar.gz"
-      sha256 "eeaaede7f243cf5405190a29f8409a5b8016b325c36d45b92a48725a3389c31d"
+    if Hardware::CPU.intel?
+      url "https://github.com/datasherlocks/sherlock/releases/download/v0.0.17/sherlock_Linux_x86_64.tar.gz"
+      sha256 "310bfd58699ae3ee917d1f3185063908bd30a9645cd9996f94045c38df4ee55e"
 
       def install
         bin.install "sherlock"
