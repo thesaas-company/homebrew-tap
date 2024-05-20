@@ -5,20 +5,20 @@
 class Sherlock < Formula
   desc "sherlock is a command line tool to interact with a datasherlocks cloud."
   homepage "https://datasherlocks.io/docs"
-  version "0.0.27"
+  version "0.0.28"
 
   on_macos do
     on_intel do
-      url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.27/sherlock_Darwin_x86_64.tar.gz"
-      sha256 "bd789f7fb3ce1370abeaea865d14bddd5b1a1255a45b2fc2b6f3439561a51dda"
+      url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.28/sherlock_Darwin_x86_64.tar.gz"
+      sha256 "bae189cf8f5e67e0221882da3c22509c42c76b235bcc67bce697a76e42444a8d"
 
       def install
         bin.install "sherlock"
       end
     end
     on_arm do
-      url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.27/sherlock_Darwin_arm64.tar.gz"
-      sha256 "37173394502ff127b1b1edb48ec8abc3c2a1c6faee4b7ae0834338b641d937ee"
+      url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.28/sherlock_Darwin_arm64.tar.gz"
+      sha256 "301529df51b1be5e0001bf289ea7583da62dd3db2c8fbde6a4899c5c774e6076"
 
       def install
         bin.install "sherlock"
@@ -29,8 +29,8 @@ class Sherlock < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.27/sherlock_Linux_x86_64.tar.gz"
-        sha256 "328e2e3fe67b155043326a77a2b1bc63aca0e04151720f5b2fec091a7f195031"
+        url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.28/sherlock_Linux_x86_64.tar.gz"
+        sha256 "5efb72879536a1c948c391c28350e6edd436d4b0dbbaa0355a74ef1f0515f9f4"
 
         def install
           bin.install "sherlock"
@@ -39,8 +39,8 @@ class Sherlock < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.27/sherlock_Linux_arm64.tar.gz"
-        sha256 "dbfbd2520619e9af12d1389228d3bfb6ca2db780c9f43459b42a3718971aee85"
+        url "https://github.com/thesaas-company/sherlock/releases/download/v0.0.28/sherlock_Linux_arm64.tar.gz"
+        sha256 "98db8c1d6ddea5d10a087a7d3c255a11be21629c68b29f8476a93885e39253fb"
 
         def install
           bin.install "sherlock"
