@@ -5,20 +5,20 @@
 class Xray < Formula
   desc "xray is a command line tool to interact with databases."
   homepage "https://thesaas.company"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/thesaas-company/xray/releases/download/v0.0.1/xray_Darwin_x86_64.tar.gz"
-      sha256 "06a8604ebf8644d14f6ed008f890e71f1ae82d932f97d97c8246b15edd56712d"
+      url "https://github.com/thesaas-company/xray/releases/download/v0.0.2/xray_Darwin_x86_64.tar.gz"
+      sha256 "e48a1a860ec135c3b02d1f2f19af9ddf7067757f850f1aa0d21b18694278ca98"
 
       def install
         bin.install "xray"
       end
     end
     on_arm do
-      url "https://github.com/thesaas-company/xray/releases/download/v0.0.1/xray_Darwin_arm64.tar.gz"
-      sha256 "5ee0ffcdffe082e5c20e6cfb5be2f26811740e739859ca1099715615793dc6d2"
+      url "https://github.com/thesaas-company/xray/releases/download/v0.0.2/xray_Darwin_arm64.tar.gz"
+      sha256 "e21611fff15840565d876a72bb1d1f8f8c586f3d420473d9fb9352408fcead97"
 
       def install
         bin.install "xray"
@@ -29,8 +29,8 @@ class Xray < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/xray/releases/download/v0.0.1/xray_Linux_x86_64.tar.gz"
-        sha256 "688456edd49ebba8be8fb876eceed9ccfda126f486a1ee24efc8026516c0eeb7"
+        url "https://github.com/thesaas-company/xray/releases/download/v0.0.2/xray_Linux_x86_64.tar.gz"
+        sha256 "f0ae90a0c5bbfea6da9344d44cbea1bf6494945851918ad4d20264aeaab9d129"
 
         def install
           bin.install "xray"
@@ -39,8 +39,8 @@ class Xray < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/xray/releases/download/v0.0.1/xray_Linux_arm64.tar.gz"
-        sha256 "8106ef99c32dd7c34e1d40596cda086aed037bd195689bd7fdf41b77b73cdc01"
+        url "https://github.com/thesaas-company/xray/releases/download/v0.0.2/xray_Linux_arm64.tar.gz"
+        sha256 "39c49dd4295ce276b90e2b35939a659b6050ee31980cb1bd05347d46ec22e879"
 
         def install
           bin.install "xray"
