@@ -351,7 +351,7 @@ End of functions from https://github.com/client9/shlib
 ------------------------------------------------------------------------
 EOF
 
-PROJECT_NAME="ci"
+PROJECT_NAME="homebrew-tap"
 OWNER=thesaas-company
 REPO="homebrew-tap"
 BINARY=ci
