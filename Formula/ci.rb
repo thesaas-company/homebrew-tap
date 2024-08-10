@@ -5,20 +5,20 @@
 class Ci < Formula
   desc "ci is a command line tool to interact with The SaaS Company cloud."
   homepage "https://thesaas.company.io/docs"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     on_intel do
-      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.7/homebrew-tap_Darwin_x86_64.tar.gz"
-      sha256 "1dfc8787f05371fb275c2efd14305c1b70835b05366a8839912d63780497e658"
+      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.8/homebrew-tap_Darwin_x86_64.tar.gz"
+      sha256 "e3c5fb4387e95170a35f36a07dd84d10bd99e78eb231b776eaef496888a4f44f"
 
       def install
         bin.install "ci"
       end
     end
     on_arm do
-      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.7/homebrew-tap_Darwin_arm64.tar.gz"
-      sha256 "6ff9f0520a7484546ea9a3ed5d266b0e3362d20b9c19cc36cc9614c997fee985"
+      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.8/homebrew-tap_Darwin_arm64.tar.gz"
+      sha256 "1f6752c01094c19d83a2000b170f48cc2887f971fa9225592fd804d57774802c"
 
       def install
         bin.install "ci"
@@ -29,8 +29,8 @@ class Ci < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.7/homebrew-tap_Linux_x86_64.tar.gz"
-        sha256 "bd0a493652837ec5e1277d12d7356bb8572ab06cb9ee1cd6ac26e153d829311d"
+        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.8/homebrew-tap_Linux_x86_64.tar.gz"
+        sha256 "94f9e6cc0b7c68426fc6900ee728e21f0871dbc546c7a8f72b1a855043eddfeb"
 
         def install
           bin.install "ci"
@@ -39,8 +39,8 @@ class Ci < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.7/homebrew-tap_Linux_arm64.tar.gz"
-        sha256 "52577a17367e668e3084b4e7624ffaa450ae71c9c6445a7f6e307819eb832c48"
+        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.8/homebrew-tap_Linux_arm64.tar.gz"
+        sha256 "acdc5532cdd82f02634760e82ebbee30f8fd2b3738f7978f84ac323ef38b1de4"
 
         def install
           bin.install "ci"
