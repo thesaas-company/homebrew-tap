@@ -64,12 +64,12 @@ execute() {
 }
 get_binaries() {
   case "$PLATFORM" in
-    darwin/amd64) BINARIES="ci" ;;
-    darwin/arm64) BINARIES="ci" ;;
-    linux/amd64) BINARIES="ci" ;;
-    linux/arm64) BINARIES="ci" ;;
-    windows/386) BINARIES="ci" ;;
-    windows/amd64) BINARIES="ci" ;;
+    darwin/amd64) BINARIES="saas" ;;
+    darwin/arm64) BINARIES="saas" ;;
+    linux/amd64) BINARIES="saas" ;;
+    linux/arm64) BINARIES="saas" ;;
+    windows/386) BINARIES="saas" ;;
+    windows/amd64) BINARIES="saas" ;;
     *)
       log_crit "platform $PLATFORM is not supported.  Make sure this script is up-to-date and file request at https://github.com/${PREFIX}/issues/new"
       exit 1
@@ -354,7 +354,7 @@ EOF
 PROJECT_NAME="homebrew-tap"
 OWNER=thesaas-company
 REPO="homebrew-tap"
-BINARY=ci
+BINARY=saas
 FORMAT=tar.gz
 OS=$(uname_os)
 ARCH=$(uname_arch)
