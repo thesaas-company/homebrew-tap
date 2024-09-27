@@ -5,20 +5,20 @@
 class Saas < Formula
   desc "Command-line interface for managing and interacting with The SaaS Company's cloud services, providing streamlined access to resources and operations."
   homepage "https://thesaas.company.io/docs"
-  version "0.0.22"
+  version "0.0.23"
 
   on_macos do
     on_intel do
-      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.22/homebrew-tap_Darwin_x86_64.tar.gz"
-      sha256 "cf4975ffb71241e9b06a899fd3f3632082910116fed9875f12c3b33116b60d20"
+      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.23/homebrew-tap_Darwin_x86_64.tar.gz"
+      sha256 "7981827ccce6e35e661f844d686b4a082a65e7ac924cb082770a07a544d51fc4"
 
       def install
         bin.install "saas"
       end
     end
     on_arm do
-      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.22/homebrew-tap_Darwin_arm64.tar.gz"
-      sha256 "314d3c45e099ab90022d6aeb015fa3865e2071bafc0fa6d56ad60405ecfdf5f8"
+      url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.23/homebrew-tap_Darwin_arm64.tar.gz"
+      sha256 "04cc652e7704ed463a498f696663c29aff6d0bfec44f853aac5282891b7956f5"
 
       def install
         bin.install "saas"
@@ -29,8 +29,8 @@ class Saas < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.22/homebrew-tap_Linux_x86_64.tar.gz"
-        sha256 "c0b6855df24ff805861f3077cf725c81ec1d98e99f432e5b865361dcc3d32293"
+        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.23/homebrew-tap_Linux_x86_64.tar.gz"
+        sha256 "6d8f4e6782f52ce58f7a18d0dcb2e1ad1012854312f58797e544851d3d61fbf9"
 
         def install
           bin.install "saas"
@@ -39,8 +39,8 @@ class Saas < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.22/homebrew-tap_Linux_arm64.tar.gz"
-        sha256 "4f341e9c785ef58d8ed948fa0a86aa17cb0da4c2e40a864bf162d26ef4dbd93d"
+        url "https://github.com/thesaas-company/homebrew-tap/releases/download/v0.0.23/homebrew-tap_Linux_arm64.tar.gz"
+        sha256 "e43a1e27d1b0659e13ee535d009bbd96786d420d6b72b3aa7a3d3f136a50585d"
 
         def install
           bin.install "saas"
