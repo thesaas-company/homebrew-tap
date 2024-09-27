@@ -5,20 +5,20 @@
 class Saas < Formula
   desc "Command-line interface for managing and interacting with The SaaS Company's cloud services, providing streamlined access to resources and operations."
   homepage "https://thesaas.company.io/docs"
-  version "0.0.27"
+  version "0.0.28"
 
   on_macos do
     on_intel do
-      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.27/cloud_Darwin_x86_64.tar.gz"
-      sha256 "4374bb558639d9c7ada2d1b30bd6279db6d11264ebe7a5969d43d5a4a348d06f"
+      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.28/cloud_Darwin_x86_64.tar.gz"
+      sha256 "846031553d5871a94b7e7a01c42eef0cefc159d383cf576ec96a0584b2ad0e2d"
 
       def install
         bin.install "saas"
       end
     end
     on_arm do
-      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.27/cloud_Darwin_arm64.tar.gz"
-      sha256 "ff9014218953db207ec210fab552a01d398578b5d556bd6bf7fab6bf3a485588"
+      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.28/cloud_Darwin_arm64.tar.gz"
+      sha256 "a325349abc27c71ea10974d74f44c1867750109a4c32802f8708160e1fb20885"
 
       def install
         bin.install "saas"
@@ -29,8 +29,8 @@ class Saas < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.27/cloud_Linux_x86_64.tar.gz"
-        sha256 "5cf4d8eaa3f3bc23c84a9366d60c5bb1253c98250db13d5f7be49bdd70db0c4b"
+        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.28/cloud_Linux_x86_64.tar.gz"
+        sha256 "1351f74140b299316e87d919fe8441bd8527441e6207ec09bd8bc7a20fe4a039"
 
         def install
           bin.install "saas"
@@ -39,8 +39,8 @@ class Saas < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.27/cloud_Linux_arm64.tar.gz"
-        sha256 "4efec276f186835880c7844314365e67671cda9c111b3605aaa57b2f786c6dd6"
+        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.28/cloud_Linux_arm64.tar.gz"
+        sha256 "d13dcc95ce7bac4c86a5acb99e7f95985a66d447b2c94f5cfc2ef80f33e56bc2"
 
         def install
           bin.install "saas"
