@@ -5,23 +5,25 @@
 class Saas < Formula
   desc "Command-line interface for managing and interacting with The SaaS Company's cloud services, providing streamlined access to resources and operations."
   homepage "https://thesaas.company.io/docs"
-  version "0.0.31"
+  version "0.0.35"
 
   on_macos do
     on_intel do
-      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.31/cloud_Darwin_x86_64.tar.gz"
-      sha256 "b8891fd898466278bbd1a570fb7715b93a2dbbf0446d76ff73d635871831c086"
+      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.35/cloud_Darwin_x86_64.tar.gz"
+      sha256 "f4534fa5053aa19c57d166a5e33d777c5c177db7e4e63065b43d1e2b4ef87382"
 
       def install
         bin.install "saas"
+        bin.install "tfstudio"
       end
     end
     on_arm do
-      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.31/cloud_Darwin_arm64.tar.gz"
-      sha256 "770bf1fbb53ff4e0a44215808a0a8908a6e563084ddd5e74bf5ada3dface86a9"
+      url "https://github.com/thesaas-company/cloud/releases/download/v0.0.35/cloud_Darwin_arm64.tar.gz"
+      sha256 "580206eb8856b9c95bc331c3849dc4b29e8287ae6630f874a443e10b04f339c7"
 
       def install
         bin.install "saas"
+        bin.install "tfstudio"
       end
     end
   end
@@ -29,21 +31,23 @@ class Saas < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.31/cloud_Linux_x86_64.tar.gz"
-        sha256 "21cc4e095e399fe85a9dd18c160f7a31ddc56086458ab4382bfd4ecaab6125c3"
+        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.35/cloud_Linux_x86_64.tar.gz"
+        sha256 "b1577256a2e1724b11f7c03392b0995b4aa840997ce2567eb2217bffcd4f7b68"
 
         def install
           bin.install "saas"
+          bin.install "tfstudio"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.31/cloud_Linux_arm64.tar.gz"
-        sha256 "65d7b0085179aabaeec82e4911b19abf87b29443b51b496cbceb002267155f63"
+        url "https://github.com/thesaas-company/cloud/releases/download/v0.0.35/cloud_Linux_arm64.tar.gz"
+        sha256 "4d3018cdc71803ee809691c233a4379fbe64b4577a0c0e7cfdc11f063cb42e34"
 
         def install
           bin.install "saas"
+          bin.install "tfstudio"
         end
       end
     end
